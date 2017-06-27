@@ -1,0 +1,33 @@
+# Specifies intentionally untracked files to ignore when using Git
+# http://git-scm.com/docs/gitignore
+
+node_modules/
+platforms/
+plugins/
+dist
+.tmp
+.sass-cache
+bower_components
+coverage
+platforms
+plugins
+plugins/*
+*.swp
+*.swo
+*.log
+*.DS_Store
+ionic.app.css
+.bowerrc
+/res
+.idea/
+.vscode/
+!nativeResourceBkp/ios/GEN/Plugins
+plugins/cordova-plugin-mfp/
+lib
+www/lib
+www/lib/*
+/lib
+main.css
+index.html
+messages_ES.json
+www/app/messages_ES.json
