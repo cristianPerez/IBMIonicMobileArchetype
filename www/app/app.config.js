@@ -1,14 +1,14 @@
 (function () {
 	"use strict";
 
-    angular
-        .module('quala')
-    	.run(run);
+	angular
+		.module('quala')
+		.run(run);
 
-    run.$inject = ['$rootScope', '$ionicPlatform', 'MFPInit', 'messagesProvider', '$ionicConfig', '$ionicLoading'];
+	run.$inject = ['$rootScope', '$ionicPlatform', 'MFPInit', 'messagesProvider', '$ionicConfig'];
 
-    function run($rootScope, $ionicPlatform, MFPInit, messagesProvider, $ionicConfig, $ionicLoading) {
-        
+	function run($rootScope, $ionicPlatform, MFPInit, messagesProvider, $ionicConfig) {
+
 		var bind = Function.prototype.bind;
 
 		$rootScope.$on('$stateChangeSuccess', handleStateChangeSuccess);
@@ -39,7 +39,6 @@
 		messagesProvider.getMessages().then(function (data) {
 			$rootScope.root_messages = data;
 		});
-
 
 	}
 

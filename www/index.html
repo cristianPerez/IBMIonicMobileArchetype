@@ -31,7 +31,9 @@
   <!-- endbuild -->
 
   <!-- cordova script (this will be a 404 during development) -->
+  <script src="lib/ngCordova/dist/ng-cordova.js"></script>
   <script type="text/javascript" src="cordova.js"></script>
+
 
 
   <!-- build:js app/pragma.min.js -->
@@ -44,8 +46,9 @@
   <script src="app/app.module.js"></script>
   <script src="app/utilities/app.utils.js"></script>
   <script src="app/utilities/MFPInit.js"></script>
-  <script src="app/features/feature.modules.js"></script>
   <script src="app/providers/messages.provider.js"></script>
+  <script src="app/providers/location.provider.js"></script>
+  <script src="app/features/feature.modules.js"></script>
   <script src="app/app.routes.js"></script>
   <script src="app/app.config.js"></script>
   <!-- endinject -->
