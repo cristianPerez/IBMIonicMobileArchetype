@@ -12,5 +12,12 @@
          */
         var vm = this;
 
+        /**
+         * Variable que almacena las settings
+         */
+        vm.settings = {
+            enableFriends: true
+        };
+
     }
 })();

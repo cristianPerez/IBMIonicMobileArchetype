@@ -1,21 +1,21 @@
 (function () {
     "use strict";
     angular
-        .module('feature.dash', [])
+        .module('feature.account', [])
         .config(routes);
     routes.$inject = ['$stateProvider'];
     function routes($stateProvider) {
         $stateProvider
-            .state('tab.dash', {
-                url: '/dash',
+            .state('tab.account', {
+                url: '/account',
                 views: {
-                    'tab-dash': {
-                        templateUrl: 'app/features/home/dash/dash.view.html',
-                        controller: 'dashController',
-                        controllerAs: 'DashCtrl',
+                    'tab-account': {
+                        templateUrl: 'app/features/home/account/account.view.html',
+                        controller: 'accountController',
+                        controllerAs: 'AccountCtrl',
                         resolve: {
                             loadCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
-                                return $ocLazyLoad.load(['app/features/home/dash/dash.controller.js']);
+                                return $ocLazyLoad.load(['app/features/home/account/account.controller.js']);
                             }]
                         }
                     }

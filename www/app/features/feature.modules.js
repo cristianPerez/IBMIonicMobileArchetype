@@ -5,6 +5,7 @@
         'feature.home',
         'feature.chat',
         'feature.dash',
-        'feature.account'
+        'feature.account',
+        'feature.chat.detail'
     ]);
 })();

@@ -70,9 +70,9 @@
          * @param {*} chatId 
          */
         function get(chatId) {
-            for (var i = 0; i < chats.length; i++) {
-                if (chats[i].id === parseInt(chatId)) {
-                    return chats[i];
+            for (var i = 0; i < vm.chats.length; i++) {
+                if (vm.chats[i].id === parseInt(chatId)) {
+                    return vm.chats[i];
                 }
             }
             return null;
