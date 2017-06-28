@@ -7,3 +7,5 @@ plugins/
 www/lib/
 /lib
 lib
+dist
+/dist
