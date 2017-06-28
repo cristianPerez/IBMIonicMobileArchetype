@@ -1,0 +1,60 @@
+//Colors app
+$color_red: #F75068;
+$color_white: #FFFFFF;
+$color_white_conocimiento : #bbbbbb;
+$color_seablue: #00D2E1;
+$color_white_conocimiento : #bbbbbb;
+$color_gray1: #F8F8F8; // Se usa para las cajas
+$color_gray2: #D6D6D6; // Botones deshabilitados y lineas de inputs
+$color_gray3: #A4A4A4; // Textos en inputs sin llenar y textos de menor tamaño o descriptivos
+$color_gray4: #565656; // Para textos corridos
+$color_gray5: #4D4D4D; // Subtitulos, iconos y botones menor categoria
+$color_black: #000000; // Titulos, fondos botones
+$color_black_opacity: rgba(0,0,0,0.8);
+$color_font_targe_opacity : #008791; //Textos para la barra de progreso que son como difuminados.
+
+//Font size
+$font_size_title : 0.9rem;
+$font_size_h1: 1.5rem;
+$font_size_subtitle: 1.2rem;
+$font_size_h3: 1rem;
+$font_size_paragraph: 0.9rem;
+
+$font_size_placeholder_hoshi: 1rem;
+$font_size_input_hoshi: 1rem;
+$font_size_placeholder_individual: 0.9rem;
+$font_size_placeholder_up: 0.75rem;
+
+
+$font_size_title_general : 1.1rem;
+$font_size_title_viag : 1.3rem;
+$font_size_title_sinviag: 1.4rem;
+$font_size_title_transfers : 0.8rem;
+
+
+$color_seablue_opacity: rgba(0, 210, 225, 0.5);
+$color_seablue_opacity_9: rgba(0, 210, 225, 0.9);
+$color_seablue_gradient : #a0eef4;
+
+$color_black: #000000;
+$color_black_opacity: rgba(0, 0, 0, 0.8);
+$color_gray: gray;
+$color_gray_opacity: rgba(214,214,214,0.9);
+$color_gray_opacity_two: rgba(128, 128, 128, 0.64);
+$color_gray_opacity_three: rgba(128, 128, 128, 0.45);
+$color_gray_opacity_four: rgba(128, 128, 128, 0.15);
+$color_white_badge: rgba(255, 255, 255, 0.8);
+$color_white_progressBar: rgba(255, 255, 255, 0.6);
+$color_background_progessBar_empty: #f8f8f8;
+$color_background_progessBar: #00b3cb;
+$color_background_progessBar_compa: #87f4fb;
+$validatePhone_gray6: #595F6E;
+$validatePhone_gray7: #aaa;
+$validatePhone_gray8: #f0f0f0;
+$border_input_color: #B9C1CA;
+
+$gray_authentication: #ededed;
+
+
+//Images app
+$background_gif: "../img/appGen.gif";
