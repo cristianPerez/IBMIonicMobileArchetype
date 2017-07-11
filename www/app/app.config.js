@@ -5,9 +5,9 @@
 		.module('quala')
 		.run(run);
 
-	run.$inject = ['$rootScope', '$ionicPlatform', 'MFPInit', 'messagesProvider', '$ionicConfig'];
+	run.$inject = ['$rootScope', '$ionicPlatform', 'messagesProvider', '$ionicConfig'];
 
-	function run($rootScope, $ionicPlatform, MFPInit, messagesProvider, $ionicConfig) {
+	function run($rootScope, $ionicPlatform, messagesProvider, $ionicConfig) {
 
 		var bind = Function.prototype.bind;
 
@@ -18,9 +18,9 @@
 		}
 		$ionicConfig.views.swipeBackEnabled(false);
 
-		$ionicPlatform.registerBackButtonAction(function () {
+		/*$ionicPlatform.registerBackButtonAction(function () {
 			event.preventDefault();
-		}, 100);
+		}, 100);*/
 
 		$ionicPlatform.ready(function () {
 			if (window.cordova && window.cordova.plugins.Keyboard) {
