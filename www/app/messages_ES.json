@@ -1,13 +1,13 @@
 {
 	"features": {
-		"account": {
-			"remember": "Enable Friends"
+		"dash": {
+			"title": "Hello World"
 		},
 		"chat": {
 			"btnDelete": "Delete"
 		},
-		"dash": {
-			"title": "Hello World"
+		"account": {
+			"remember": "Enable Friends"
 		}
 	}
 }
