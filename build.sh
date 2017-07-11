@@ -6,7 +6,6 @@
 ## ANDROID STUDIO
 ## XCODE AND ACCEPT THE LICENCE
 
-
 #INSTAL PACKAGES
 npm install ionic  -g
 npm install ionic-cli -g
