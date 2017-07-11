@@ -42,5 +42,8 @@
       "version": "",
       "locator": "ios"
     }
-  ]
+  ],
+  "scripts": {
+    "build": "bash build.sh"
+  }
 }
