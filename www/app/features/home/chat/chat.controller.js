@@ -5,17 +5,21 @@
         .module('feature.chat')
         .controller('chatController', chatController);
 
-    chatController.$inject = ['chatService'];
-    function chatController(chatService) {
+/*    chatController.$inject = ['chatService'];
+    function chatController(chatService) {*/
+    chatController.$inject = ['$scope'];
+    function chatController($scope) {
         /**
          * Variable de contexto.
          */
         var vm = this;
 
+        vm.slideTime = 3000;
+
         /**
          * Variable que alamacena los chats inciales.
          */
-        vm.chats = chatService.all();
+        //vm.chats = chatService.all();
 
         /**
          * Declaro funciones.

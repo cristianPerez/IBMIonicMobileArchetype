@@ -21,6 +21,11 @@
     "gulp-useref": "^3.1.2",
     "gulp-util": "^2.2.14",
     "gulp-watch": "^4.3.11",
+    "jasmine-core": "^2.7.0",
+    "karma": "^1.7.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-spec-reporter": "0.0.31",
     "pump": "^1.0.2",
     "shelljs": "^0.3.0",
     "wiredep": "^4.0.0"
@@ -44,6 +49,7 @@
     }
   ],
   "scripts": {
-    "build": "bash build.sh"
+    "build": "bash build.sh",
+    "test": "karma start"
   }
 }
