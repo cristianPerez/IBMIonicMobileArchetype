@@ -7,7 +7,7 @@
         
     chatController.$inject = ['chatService'];
     function chatController(chatService) {
-/*     chatController.$inject = ['$scope'];
+    /*  chatController.$inject = ['$scope'];
     function chatController($scope) { */
         /**
          * Variable de contexto.

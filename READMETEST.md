@@ -130,7 +130,18 @@ standard "www/app/**/*.js"
 ```
 
 
-# Implement precommit
+# Install precommit
+```bash
+npm i -D pre-commit
+```
+
+#Implement precommit
+```js
+"pre-commit": {
+    "run": [ "check-estandard", "exit"]
+}
+```
+
 
 
 
