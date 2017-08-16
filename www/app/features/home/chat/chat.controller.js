@@ -1,7 +1,7 @@
 (function () {
-    'use strict';
+  'use strict'
 
-    angular
+  angular
         .module('feature.chat')
         .controller('chatController', chatController);
         

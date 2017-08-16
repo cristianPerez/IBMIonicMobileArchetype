@@ -117,10 +117,16 @@ reporters: ['spec', 'coverage'],
 }
 ```
 
-# Implement eslint
+# Install standard
 
 ```bash
-$ eslint --init 
+npm i -D standard
+```
+
+# command for standard
+
+```bash
+standard "www/app/**/*.js"
 ```
 
 
