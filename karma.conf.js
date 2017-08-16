@@ -1,7 +1,7 @@
 // Karma configuration
 // Generated on Tue Aug 15 2017 06:51:08 GMT-0500 (-05)
 
-module.exports = function(config) {
+module.exports = function (config) {
   config.set({
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
@@ -10,7 +10,7 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['jasmine'],
+    frameworks: ['jasmine', 'chai'],
 
 
     // list of files / patterns to load in the browser
@@ -24,6 +24,7 @@ module.exports = function(config) {
       'www/app/features/home/dash/dash.module.js',
       'www/app/features/home/chat/chat.module.js',
       'www/app/features/home/chat/chat.controller.js',
+      'www/app/features/home/chat/chat.filter.js',
       'www/app/features/home/account/account.module.js',
       'www/app/features/home/home.module.js',
       'www/app/app.module.js',
@@ -38,12 +39,17 @@ module.exports = function(config) {
 
     // list of files to exclude
     exclude: [
+
     ],
 
 
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+      // source files, that you wanna generate coverage for
+      // do not include tests or libraries
+      // (these files will be instrumented by Istanbul)
+      'www/app/**/*.js': ['coverage']
     },
 
 
@@ -51,8 +57,13 @@ module.exports = function(config) {
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
     //reporters: ['progress'],
-    reporters: ['spec'],
+    reporters: ['spec', 'coverage'],
 
+    // optionally, configure the reporter
+    coverageReporter: {
+      type: 'html',
+      dir: 'coverage/'
+    },
 
     // web server port
     port: 9876,

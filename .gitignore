@@ -9,3 +9,4 @@ www/lib/
 lib
 dist
 /dist
+/coverage

@@ -78,7 +78,7 @@ gulp.task('watch', ['inject', 'wiredep'], function () {
 gulp.task('inject', function () {
   gulp.src('./www/index.html')
     .pipe(inject(
-      gulp.src(['!./www/app/**/*.controller.js', '!./www/app/**/*.service.js', './www/app/**/*.js']).pipe(angularFilesort()), { relative: true }
+      gulp.src(['!./www/app/**/*.controller.js', '!./www/app/**/*.service.js', './www/app/**/*.js', '!www/app/**/*.spec.js']).pipe(angularFilesort()), { relative: true }
     ))
     .pipe(inject(
       gulp.src(['./www/css/**/*.css'], { read: false }), { relative: true }

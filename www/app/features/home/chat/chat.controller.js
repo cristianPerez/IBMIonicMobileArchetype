@@ -4,11 +4,11 @@
     angular
         .module('feature.chat')
         .controller('chatController', chatController);
-
-/*    chatController.$inject = ['chatService'];
-    function chatController(chatService) {*/
-    chatController.$inject = ['$scope'];
-    function chatController($scope) {
+        
+    chatController.$inject = ['chatService'];
+    function chatController(chatService) {
+/*     chatController.$inject = ['$scope'];
+    function chatController($scope) { */
         /**
          * Variable de contexto.
          */
@@ -19,7 +19,7 @@
         /**
          * Variable que alamacena los chats inciales.
          */
-        //vm.chats = chatService.all();
+        vm.chats = chatService.all();
 
         /**
          * Declaro funciones.
