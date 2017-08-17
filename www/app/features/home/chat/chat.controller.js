@@ -7,6 +7,9 @@
 
     chatController.$inject = ['chatService'];
     function chatController(chatService) {
+
+    /*chatController.$inject = ['$scope'];
+    function chatController($scope) {*/
         /**
          * Variable de contexto.
          */
@@ -17,6 +20,12 @@
          */
         vm.chats = chatService.all();
 
+        /**
+         * 
+         * @var
+         */
+        vm.slideTime = 3000;
+        
         /**
          * Declaro funciones.
          */
