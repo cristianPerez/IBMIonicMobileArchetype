@@ -61,6 +61,6 @@
   },
 
   "pre-commit": {
-    "run": [ "check-estandard", "exit"]
+    "run": []
   }
 }
